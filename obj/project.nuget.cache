@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZyHT8fGEnRZZICm7mqak/3TpfPQmtTGUzBL+ulUb2sya7nBGYNM3oordAFxuADe06nIBSK+87F23kC0kHLw/Iw==",
+  "dgSpecHash": "svD3X0CMd3W+L0JF2fPRbyeftxdMKMd8MEQMregt5Xd5okrVeVCygs/rgRzbTvGegFDZymqLoR24jAhg0rCTPA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
+  "projectFilePath": "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\neile\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\neile\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -75,7 +75,6 @@
     "C:\\Users\\neile\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.entityframeworkcore\\7.0.6\\microsoft.visualstudio.web.codegeneration.entityframeworkcore.7.0.6.nupkg.sha512",
     "C:\\Users\\neile\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\7.0.6\\microsoft.visualstudio.web.codegeneration.templating.7.0.6.nupkg.sha512",
     "C:\\Users\\neile\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\7.0.6\\microsoft.visualstudio.web.codegeneration.utils.7.0.6.nupkg.sha512",
-    "C:\\Users\\neile\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\7.0.6\\microsoft.visualstudio.web.codegenerators.mvc.7.0.6.nupkg.sha512",
     "C:\\Users\\neile\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\neile\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\neile\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",

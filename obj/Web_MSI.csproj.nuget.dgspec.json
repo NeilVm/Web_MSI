@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj": {}
+    "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj": {
+    "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
+        "projectUniqueName": "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
         "projectName": "Web_MSI",
-        "projectPath": "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
+        "projectPath": "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
         "packagesPath": "C:\\Users\\neile\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\obj\\",
+        "outputPath": "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\neile\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -58,7 +58,7 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
-            "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
+            "Microsoft.VisualStudio.Web.CodeGeneration": {
               "target": "Package",
               "version": "[7.0.6, )"
             },
