@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj": {}
+    "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj": {
+    "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
+        "projectUniqueName": "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
         "projectName": "Web_MSI",
-        "projectPath": "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
+        "projectPath": "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\Web_MSI.csproj",
         "packagesPath": "C:\\Users\\neile\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\obj\\",
+        "outputPath": "c:\\Users\\neile\\OneDrive\\Escritorio\\Web_MSI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\neile\\AppData\\Roaming\\NuGet\\NuGet.Config"
