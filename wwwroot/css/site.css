@@ -9,7 +9,7 @@ html {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #689b5f;
 }
 
 html {
@@ -30,6 +30,10 @@ body {
 .texto{
   text-align: center;
 }
-.imglogin{
-  
+.imalog{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-image: url("https://media.istockphoto.com/id/1143525380/es/foto/distrito-de-san-isidro-en-la-hora-azul-en-lima-per%C3%BA.jpg?s=170667a&w=0&k=20&c=HUHRu3aORg3kznk_zWIbqNSbTQnh4gV14YzPoLc-zwg=");
 }
+
