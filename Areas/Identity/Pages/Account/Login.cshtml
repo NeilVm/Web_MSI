@@ -1,11 +1,8 @@
 ﻿@page
 @model LoginModel
 
-@{
-    ViewData["Title"] = "";
-}
 
-<h1>@ViewData["Title"]</h1>
+<body class="imalog">
 <div class="login">
 <div class="row">
     <div class="col-md-4">
@@ -24,18 +21,18 @@
                     <label asp-for="Input.Password" class="form-label">Contraseña</label>
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
-                <div class="checkbox mb-3">
-                    <label asp-for="Input.RememberMe" class="form-label">
+                <div class="checkbox mb-3" >
+                   <b><label asp-for="Input.RememberMe" class="form-label">
                         <input class="form-check-input" asp-for="Input.RememberMe" />
                         @Html.DisplayNameFor(m => m.Input.RememberMe)
-                    </label>
+                    </label></b> 
                 </div>
                 <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-success">Iniciar Sesion</button>
                 </div>
                 <div>
                     <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Restablecer contraseña</a>
                     </p>
                 </div>
             </form>
@@ -43,6 +40,7 @@
     </div>
 </div>
 </div>
+</body>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
