@@ -25,11 +25,15 @@
                         </li>
                             <a class="nav-link text-dark" asp-area="" asp-controller="Roles" asp-action="roles">ASIGNAR ROLES</a>
                         </li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="Privacy">USUARIOS</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="users">USUARIOS</a>
                         </li>
                             <a class="nav-link text-dark" asp-area="" asp-controller="Penalidad" asp-action="penalidad">PENALIDADES</a>
                         </li>
                     </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                    </form>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
