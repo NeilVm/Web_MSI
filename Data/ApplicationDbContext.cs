@@ -2,12 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Web_MSI.Models;
 
-namespace Web_MSI.Data;
-
-public class ApplicationDbContext : IdentityDbContext
+namespace Web_MSI.Data
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : base(options)
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
     }
 }

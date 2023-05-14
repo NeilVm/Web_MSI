@@ -2,6 +2,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Web_MSI.Data;
 using Npgsql;
+using Web_MSI.Models;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Web_MSI;
+using Web_MSI.Areas.Identity.Pages.Account;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,11 +15,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
    options.UseNpgsql(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
+    builder.Services.AddTransient<IEmailSender, EmailService>();
+
+
 builder.Services.AddControllersWithViews();
 
+// Agregar esta línea para habilitar las páginas Razor
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -38,11 +49,15 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+// Agregar esta línea antes de app.MapRazorPages()
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+    
 app.MapRazorPages();
 
 app.Run();
