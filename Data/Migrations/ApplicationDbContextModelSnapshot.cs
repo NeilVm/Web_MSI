@@ -226,6 +226,64 @@ namespace Web_MSI.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Web_MSI.Models.HojaRegistroD", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Completo")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Personal Comp");
+
+                    b.Property<DateTime>("PaymentDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("Hora");
+
+                    b.Property<string>("embolsado")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Embolsado");
+
+                    b.Property<string>("epp")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("EPP");
+
+                    b.Property<string>("herramientas")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Herramientas");
+
+                    b.Property<string>("identificado")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Personal Idn");
+
+                    b.Property<string>("nivel")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Nivel Ejecucion");
+
+                    b.Property<string>("tierra")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Tiera/Papeles");
+
+                    b.Property<string>("uniforme")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Uniforme");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_HojaRegistroD");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)

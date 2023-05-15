@@ -10,5 +10,6 @@ namespace Web_MSI.Data
             : base(options)
         {
         }
+         public DbSet<Web_MSI.Models.HojaRegistroD> DataRegistro { get; set; }
     }
 }
