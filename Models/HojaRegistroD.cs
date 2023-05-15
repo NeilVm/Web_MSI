@@ -11,7 +11,7 @@ namespace Web_MSI.Models
 {
     [Table("t_HojaRegistroD")]
     
-        public class Penalidad 
+        public class HojaRegistroD
         {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
