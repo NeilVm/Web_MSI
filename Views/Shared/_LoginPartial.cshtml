@@ -1,5 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using Web_MSI.Models
+<<<<<<< HEAD
+=======
+@using System.Security.Claims
+>>>>>>> 5b01fbcf20cc073d9467c5eade322b1aae36feba
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
@@ -9,7 +13,11 @@
 {
     var user = await UserManager.GetUserAsync(User);
     <li class="nav-item">
+<<<<<<< HEAD
         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hola, @user.FirstName</a>
+=======
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@user.FirstName</a>
+>>>>>>> 5b01fbcf20cc073d9467c5eade322b1aae36feba
     </li>
     <li class="nav-item">
         <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">

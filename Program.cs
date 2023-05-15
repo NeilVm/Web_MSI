@@ -6,6 +6,7 @@ using Web_MSI.Models;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Web_MSI;
 using Web_MSI.Areas.Identity.Pages.Account;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
