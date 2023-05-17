@@ -63,10 +63,22 @@ namespace Web_MSI.Models
         public string Comentarios { get; set; }
 
         [Column("Fecha")]
-        public DateTime PaymentDate { get; set; }
+        public DateTime Fecha { get; set; }
+
+        [Column("Hora")]
+        public DateTime Hora { get; set; }
+
 
         [Column("Estado")]
         public string Estado { get; set; }
+
+        [Column("Status")]
+        public string Status { get; set; }
+
+        [Column("Nom_Fis")]
+        public string Nom_Fis{ get; set; }
+        
+
         }
     
 }

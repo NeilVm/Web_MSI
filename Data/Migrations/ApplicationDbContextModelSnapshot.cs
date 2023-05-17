@@ -338,10 +338,23 @@ namespace Web_MSI.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("Estado");
 
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("Fecha");
+
+                    b.Property<DateTime>("Hora")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("Hora");
+
                     b.Property<string>("Item")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("Item");
+
+                    b.Property<string>("Nom_Fis")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Nom_Fis");
 
                     b.Property<string>("Nom_Penalidad")
                         .IsRequired()
@@ -358,14 +371,15 @@ namespace Web_MSI.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("Ocurrencia");
 
-                    b.Property<DateTime>("PaymentDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("Fecha");
-
                     b.Property<string>("Referecia")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("Referencia");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Status");
 
                     b.Property<string>("obs_Penalidad")
                         .IsRequired()
