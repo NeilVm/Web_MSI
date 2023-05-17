@@ -9,23 +9,29 @@
 <div class="row">
     <div class="col-md-4">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Crear nueva cuenta</h2>
+            <h2 >Crear nueva cuenta</h2>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" placeholder="nombre" />
-                <label asp-for="Input.FirstName ">nombre</label>
+                <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" placeholder="Nombre" />
+                <label asp-for="Input.FirstName ">Nombre</label>
                 <span asp-validation-for="Input.FirstName " class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
                 <input asp-for="Input.LastName" class="form-control" autocomplete="username" aria-required="true" placeholder="apellido" />
-                <label asp-for="Input.LastName">apellido</label>
+                <label asp-for="Input.LastName">Apellido</label>
                 <span asp-validation-for="Input.LastName" class="text-danger"></span>
             </div>
+            
             <div class="form-floating mb-3">
                 <input asp-for="Input.DNI" class="form-control" autocomplete="username" aria-required="true" placeholder="DNI" />
                 <label asp-for="Input.DNI">DNI</label>
                 <span asp-validation-for="Input.DNI" class="text-danger"></span>
+            </div>
+             <div class="form-floating mb-3">
+                <input asp-for="Input.Correo" class="form-control" autocomplete="username" aria-required="true" placeholder="Correo electronico" />
+                <label asp-for="Input.Correo">Correo</label>
+                <span asp-validation-for="Input.Correo" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
                 <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />

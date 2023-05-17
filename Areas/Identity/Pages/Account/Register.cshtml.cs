@@ -105,10 +105,15 @@ namespace Web_MSI.Areas.Identity.Pages.Account
             [Required]
             [Display(Name = "First Name")]
             public string FirstName { get; set; }
+
     
             [Required]
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
+
+            [Required]
+            [Display(Name = "Correo")]
+            public string Correo { get; set; }
         }
 
 
@@ -153,7 +158,8 @@ namespace Web_MSI.Areas.Identity.Pages.Account
             UserName = Input.DNI,
             Email = Input.DNI,
             FirstName = Input.FirstName,
-            LastName = Input.LastName
+            LastName = Input.LastName,
+            Correo = Input.Correo
         };
         return user;
             }

@@ -16,8 +16,8 @@ namespace Web_MSI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
         public int Id { get; set; }
-        [Column("Hora")]
-        public DateTime PaymentDate { get; set; }
+        [Column("HoraR")]
+        public String HoraR { get; set; }
         [Column("Tiera/Papeles")]
         public string tierra { get; set; }
         [Column("Embolsado")]

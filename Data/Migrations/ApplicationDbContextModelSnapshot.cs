@@ -166,6 +166,10 @@ namespace Web_MSI.Data.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("text");
 
+                    b.Property<string>("Correo")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("character varying(256)");
@@ -240,9 +244,10 @@ namespace Web_MSI.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("Personal Comp");
 
-                    b.Property<DateTime>("PaymentDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("Hora");
+                    b.Property<string>("HoraR")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("HoraR");
 
                     b.Property<string>("embolsado")
                         .IsRequired()
@@ -338,12 +343,14 @@ namespace Web_MSI.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("Estado");
 
-                    b.Property<DateTime>("Fecha")
-                        .HasColumnType("timestamp with time zone")
+                    b.Property<string>("Fecha")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("Fecha");
 
-                    b.Property<DateTime>("Hora")
-                        .HasColumnType("timestamp with time zone")
+                    b.Property<string>("Hora")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("Hora");
 
                     b.Property<string>("Item")
