@@ -284,6 +284,104 @@ namespace Web_MSI.Data.Migrations
                     b.ToTable("t_HojaRegistroD");
                 });
 
+            modelBuilder.Entity("Web_MSI.Models.Penalidades", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Actividad")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Actividad");
+
+                    b.Property<string>("Ape_Sup_pe")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Ape_Sup_pe");
+
+                    b.Property<string>("Celular_Sup_pe")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Celular_Sup_pe");
+
+                    b.Property<string>("Comentarios")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Comentarios");
+
+                    b.Property<string>("Correo_Sup_pe")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Correo_Sup_pe");
+
+                    b.Property<string>("DNI_Sup_pe")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("DNI_Sup_pe");
+
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Direccion");
+
+                    b.Property<string>("Distrito")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Distrito");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Estado");
+
+                    b.Property<string>("Item")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Item");
+
+                    b.Property<string>("Nom_Penalidad")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Nom_Penalidad");
+
+                    b.Property<string>("Nom_sup_Pe")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Nom_sup_Pe");
+
+                    b.Property<string>("Ocurrencia")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Ocurrencia");
+
+                    b.Property<DateTime>("PaymentDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("Fecha");
+
+                    b.Property<string>("Referecia")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Referencia");
+
+                    b.Property<string>("obs_Penalidad")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("obs_Penalidad");
+
+                    b.Property<string>("observacion")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Obs");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_Penalidad");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
