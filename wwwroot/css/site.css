@@ -36,3 +36,11 @@ body {
   height: 100%;
   background-image: url("https://media.istockphoto.com/id/1143525380/es/foto/distrito-de-san-isidro-en-la-hora-azul-en-lima-per%C3%BA.jpg?s=170667a&w=0&k=20&c=HUHRu3aORg3kznk_zWIbqNSbTQnh4gV14YzPoLc-zwg=");
 }
+
+.register{
+  position: relative;
+  margin: 0 auto;
+  top: 80%;
+  left:35%;
+
+}
