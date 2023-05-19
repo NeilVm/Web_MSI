@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Web_MSI.Models.Penalidades>
 @using System.Collections.Generic;
-<h1>Inicio</h1>
+<h1>Lista de Ocurrencias</h1>
 @{
     ViewData["Title"] = "";
 }
@@ -51,11 +51,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
+            <br>
             <td>
+                <button type="button" class="btn btn-success">Revisar Formato</button>
             </td>
         </tr>
 }
-    </tbody>
+    </tbody>    
 </table>
 <br>
 <br><br>

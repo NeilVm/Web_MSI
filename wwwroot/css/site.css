@@ -44,3 +44,9 @@ body {
   left:35%;
 
 }
+.logo{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReoIcnt9XsWrl3FQVAMsAJ2WbZ9TZtBBeLE-iHsnIzWA&s");
+}

@@ -1,0 +1,87 @@
+@model IEnumerable<Web_MSI.Models.HojaRegistroD>
+@using System.Collections.Generic;
+<h1>Lista de Resportes Diarios</h1>
+@{
+    ViewData["Title"] = "";
+}
+<p>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <h9>Item</h9>
+            </th>
+            <th>
+                <h9>Hora Registrada</h9>
+            </th>
+            <th>
+              <h9>Nivel de Ejecucion de Tierras</h9>
+            </th>
+            <th>
+              <h9>Embolsado de Residuos</h9>
+            </th>
+            <th>
+              <h9>Buen nivel de Ejecucion</h9>
+            </th>
+            <th>
+              <h9>Uniforme Completo</h9>
+            </th>
+            <th>
+                <h9>Herramientas Completas</h9>
+            </th>
+            <th>
+                <h9>Personal Completo</h9>
+            </th>
+            <th>
+                <h9>Personal Identificado</h9>
+            </th>
+            <th>
+                <h9>Epp Completo</h9>
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoraR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tierra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.embolsado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nivel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.uniforme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.herramientas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Completo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.identificado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.epp)
+            </td>
+            <br>
+            <td>
+
+            </td>
+        </tr>
+}
+    </tbody>    
+</table>
+<br>
+<br><br>

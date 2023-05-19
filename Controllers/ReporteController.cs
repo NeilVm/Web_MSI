@@ -1,4 +1,4 @@
-﻿#nullable disable
+#nullable disable
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,22 +11,22 @@ using Web_MSI.Models;
 
 namespace Web_MSI.Controllers
 {
-    public class HomeController : Controller
+    public class ReporteController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public HomeController(ApplicationDbContext context)
+        public ReporteController(ApplicationDbContext context)
         {
             _context = context;
         }
 
         
-        public async Task<IActionResult> inicio()
+        public async Task<IActionResult> Reporte()
         {
-            return View(await _context.DataPenalidades.ToListAsync());
+            return View(await _context.DataDiario.ToListAsync());
         }
 
-        // GET: Producto/Details/5
+       
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,14 +34,13 @@ namespace Web_MSI.Controllers
                 return NotFound();
             }
 
-            var penalidades = await _context.DataPenalidades
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (penalidades == null)
+            var Reporte = await _context.DataDiario.FirstOrDefaultAsync(m => m.Id == id);
+            if (Reporte == null)
             {
                 return NotFound();
             }
 
-            return View(penalidades);
+            return View(Reporte);
         }
 
     }

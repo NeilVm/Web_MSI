@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <div class="logo"></div>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"></a>
@@ -26,13 +27,14 @@
                            
                             <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="users">Usuarios</a>
                         </li>
-                          
+                          <a class="nav-link text-dark" asp-area="" asp-controller="Reporte" asp-action="Reporte">Control Diario</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
+        
     </header>
     <div class="container">
         <main role="main" class="pb-3">
