@@ -289,6 +289,25 @@ namespace Web_MSI.Data.Migrations
                     b.ToTable("t_HojaRegistroD");
                 });
 
+            modelBuilder.Entity("Web_MSI.Models.Parques", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nom_Par")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Nom_Par");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_parques");
+                });
+
             modelBuilder.Entity("Web_MSI.Models.Penalidades", b =>
                 {
                     b.Property<int>("Id")

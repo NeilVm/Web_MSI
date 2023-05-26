@@ -13,5 +13,7 @@ namespace Web_MSI.Data
          public DbSet<Web_MSI.Models.HojaRegistroD> DataRegistro { get; set; }
          public DbSet<Web_MSI.Models.Penalidades> DataPenalidades { get; set; }
          public DbSet<Web_MSI.Models.HojaRegistroD> DataDiario { get; set; }
+
+         public DbSet<Web_MSI.Models.Parques> DataParques { get; set; }
     }
 }
